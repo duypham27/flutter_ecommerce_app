@@ -9,11 +9,11 @@ class DColors {
   static const Color accent = Color(0xFFb0c7ff);
 
   // Gradient Colors
-  static const Gradient linerGradient = LinearGradient(
-    begin: Alignment(0.0, 0.0),
-    end: Alignment(0.737, -0.707),
-    colors: [Color(0xffff9a9e), Color(0xfffad0c4), Color(0xfffad0c4)],
-  );
+  // static const Gradient linerGradient = LinearGradient(
+  //   begin: Alignment(0.0, 0.0),
+  //   end: Alignment(0.737, -0.707),
+  //   colors: [Color(0xffff9a9e), Color(0xfffad0c4), Color(0xfffad0c4)],
+  // );
 
   // Text Colors
   static const Color textPrimary = Color(0xFF333333);
