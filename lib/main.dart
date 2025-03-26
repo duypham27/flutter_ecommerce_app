@@ -11,17 +11,3 @@ void main() {
 
   runApp(const App());
 }
-
-/// --- Use this class to set up this theme, initial Bindings, any animations and much ---
-// class App extends StatelessWidget {
-//   const App({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       themeMode: ThemeMode.system,
-//       theme: DAppTheme.lightTheme,
-//       darkTheme: DAppTheme.darkTheme,
-//     );
-//   }
-// }
