@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
+import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,10 +21,30 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   /// -- AppBar
                   DHomeAppBar(),
+                  SizedBox(height: DSizes.spaceBtwSections),
 
                   /// -- SearchBar
+                  DSearchContainer(text: 'Search in Store'),
+                  SizedBox(height: DSizes.spaceBtwSections),
 
                   /// -- Categories
+                  Padding(
+                    padding: EdgeInsets.only(left: DSizes.defaultSpace),
+                    child: Column(
+                      children: [
+                        /// -- Heading
+                        DSectionHeading(
+                          title: 'Popular Categories',
+                          showActionButton: false,
+                          textColor: Colors.white,
+                        ),
+                        SizedBox(height: DSizes.spaceBtwItems),
+
+                        /// -- Categories
+                        DHomeCategories(),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
