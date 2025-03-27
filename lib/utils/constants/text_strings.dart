@@ -16,7 +16,7 @@ class DTexts {
 
   // -- Home
   static const String homeAppBarTitle = "Good day for shopping";
-  static const String homeAppBarSubTitle = "Taimoor Sikander";
+  static const String homeAppBarSubTitle = "Duy An Bach Pham";
 
   // -- Authentication Form Text
   static const String firstName = "First Name";
