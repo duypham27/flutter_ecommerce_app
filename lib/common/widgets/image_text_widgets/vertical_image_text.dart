@@ -39,11 +39,7 @@ class DVerticalImageText extends StatelessWidget {
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
-                child: Image(
-                  image: AssetImage(image),
-                  fit: BoxFit.cover,
-                  color: dark ? DColors.black : DColors.white,
-                ),
+                child: Image(image: AssetImage(image), fit: BoxFit.cover),
               ),
             ),
 
