@@ -55,4 +55,69 @@ class DImages {
   static const String promoBanner1 = "assets/images/banners/promo-banner-1.png";
   static const String promoBanner2 = "assets/images/banners/promo-banner-2.png";
   static const String promoBanner3 = "assets/images/banners/promo-banner-3.png";
+
+  // -- Products
+  static const String productImage1 =
+      "assets/images/products/adidas-shoe-1.png";
+  static const String productImage2 =
+      "assets/images/products/adidas-shoe-2.png";
+  static const String productImage3 =
+      "assets/images/products/adidas-shoe-3.png";
+  static const String productImage4 =
+      "assets/images/products/ahana-jewelry-1.png";
+  static const String productImage5 =
+      "assets/images/products/american-football-ball-sport-1.png";
+  static const String productImage6 =
+      "assets/images/products/apple-smartphone-1.png";
+  static const String productImage7 =
+      "assets/images/products/apple-smartphone-2.png";
+  static const String productImage8 =
+      "assets/images/products/badminton-racket-sport-1.png";
+  static const String productImage9 =
+      "assets/images/products/badminton-racket-sport-2.png";
+  static const String productImage10 =
+      "assets/images/products/basket-ball-sport-1.png";
+  static const String productImage11 =
+      "assets/images/products/bicycle-sport-1.png";
+  static const String productImage12 = "assets/images/products/cap-cloth-1.png";
+  static const String productImage13 = "assets/images/products/cap-cloth-2.png";
+  static const String productImage14 = "assets/images/products/car-toy-1.png";
+  static const String productImage15 =
+      "assets/images/products/cartier-necklaces-jewelry-1.png";
+  static const String productImage16 = "assets/images/products/doll-toy-4.png";
+  static const String productImage17 =
+      "assets/images/products/dress-cloth-1.png";
+  static const String productImage18 =
+      "assets/images/products/dress-cloth-2.png";
+  static const String productImage19 =
+      "assets/images/products/dress-cloth-3.png";
+  static const String productImage20 =
+      "assets/images/products/dress-cloth-4.png";
+  static const String productImage21 = "assets/images/products/duck-toy-3.png";
+  static const String productImage22 =
+      "assets/images/products/gold-necklaces-jewelry-2.png";
+  static const String productImage23 = "assets/images/products/jewelry-1.png";
+  static const String productImage24 = "assets/images/products/nike-shoe-1.png";
+  static const String productImage25 = "assets/images/products/nike-shoe-2.png";
+  static const String productImage26 = "assets/images/products/nike-shoe-3.png";
+  static const String productImage27 =
+      "assets/images/products/office-desk-furniture-1.png";
+  static const String productImage28 =
+      "assets/images/products/polo-cloth-1.png";
+  static const String productImage29 =
+      "assets/images/products/samsung-smartphone-1.png";
+  static const String productImage30 =
+      "assets/images/products/samsung-smartphone-2.png";
+  static const String productImage31 =
+      "assets/images/products/sofa-furniture-1.png";
+  static const String productImage32 =
+      "assets/images/products/table-furniture-1.png";
+  static const String productImage33 =
+      "assets/images/products/table-furniture-2.png";
+  static const String productImage34 =
+      "assets/images/products/tennis-ball-sport-1.png";
+  static const String productImage35 =
+      "assets/images/products/tennis-racket-sport-1.png";
+  static const String productImage36 =
+      "assets/images/products/volleyball-sport-1.png";
 }
