@@ -3,6 +3,7 @@ import 'package:flutter_ecommerce_app/common/styles/shadows.dart';
 import 'package:flutter_ecommerce_app/common/widgets/container/rounded_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/icons/d_circular_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/images/d_rounded_image.dart';
+import 'package:flutter_ecommerce_app/common/widgets/texts/d_brand_title_with_verified_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/product_price_text.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/product_title_text.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
@@ -87,51 +88,42 @@ class DProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   const SizedBox(height: DSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        'Adidas',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: DSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: DColors.primary,
-                        size: DSizes.iconXs,
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      /// Price
-                      const DProductPriceText(price: '35.0'),
-
-                      /// Add to Cart Button
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: DColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(DSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(
-                              DSizes.productImageRadius,
-                            ),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: DSizes.iconLg * 1.2,
-                          height: DSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(Iconsax.add, color: DColors.white),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                  DBrandTitleWithVerifiedIcon(title: 'Adidas'),
                 ],
               ),
+            ),
+
+            // TODO: Add Spacer() here to keep the height of each Box same in case 1 or 2 lines of Headings
+            const Spacer(),
+
+            /// Price Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                /// Price
+                Padding(
+                  padding: EdgeInsets.only(left: DSizes.sm),
+                  child: DProductPriceText(price: '35.0'),
+                ),
+
+                /// Add to Cart Button
+                Container(
+                  decoration: const BoxDecoration(
+                    color: DColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(DSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(DSizes.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    width: DSizes.iconLg * 1.2,
+                    height: DSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(Iconsax.add, color: DColors.white),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

@@ -3,14 +3,10 @@ import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:iconsax/iconsax.dart';
 
 class DCartCounterIcon extends StatelessWidget {
-  const DCartCounterIcon({
-    super.key,
-    required this.onPressed,
-    required this.iconColor,
-  });
+  const DCartCounterIcon({super.key, required this.onPressed, this.iconColor});
 
   final VoidCallback onPressed;
-  final Color iconColor;
+  final Color? iconColor;
 
   @override
   Widget build(BuildContext context) {
