@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/styles/shadows.dart';
-import 'package:flutter_ecommerce_app/common/widgets/container/rounded_container.dart';
+import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/icons/d_circular_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/images/d_rounded_image.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/d_brand_title_with_verified_icon.dart';
