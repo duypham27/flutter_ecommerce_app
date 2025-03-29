@@ -78,18 +78,21 @@ class DProductCardVertical extends StatelessWidget {
             const SizedBox(height: DSizes.spaceBtwItems / 2),
 
             /// -- Details
-            Padding(
-              padding: const EdgeInsets.only(left: DSizes.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const DProductTitleText(
-                    title: 'White Adidas Shoes',
-                    smallSize: true,
-                  ),
-                  const SizedBox(height: DSizes.spaceBtwItems / 2),
-                  DBrandTitleWithVerifiedIcon(title: 'Adidas'),
-                ],
+            const Padding(
+              padding: EdgeInsets.only(left: DSizes.sm),
+              child: SizedBox(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    DProductTitleText(
+                      title: 'White Adidas Shoes',
+                      smallSize: true,
+                    ),
+                    SizedBox(height: DSizes.spaceBtwItems / 2),
+                    DBrandTitleWithVerifiedIcon(title: 'Adidas'),
+                  ],
+                ),
               ),
             ),
 
@@ -101,7 +104,7 @@ class DProductCardVertical extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 /// Price
-                Padding(
+                const Padding(
                   padding: EdgeInsets.only(left: DSizes.sm),
                   child: DProductPriceText(price: '35.0'),
                 ),

@@ -9,7 +9,7 @@ class DVerticalImageText extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = DColors.white,
-    this.backgroundColor = DColors.white,
+    this.backgroundColor,
     this.onTap,
   });
 
