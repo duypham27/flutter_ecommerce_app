@@ -11,32 +11,29 @@ class DPrimaryHeaderContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DCurvedEdgeWidget(
-      child: SizedBox(
-        height: 400,
-        child: Container(
-          color: DColors.primary,
+      child: Container(
+        color: DColors.primary,
 
-          ///
-          child: Stack(
-            children: [
-              /// -- Background Custom Shapes
-              Positioned(
-                top: -150,
-                right: -250,
-                child: DCircularContainer(
-                  backgroundColor: DColors.textWhite.withOpacity(0.1),
-                ),
+        ///
+        child: Stack(
+          children: [
+            /// -- Background Custom Shapes
+            Positioned(
+              top: -150,
+              right: -250,
+              child: DCircularContainer(
+                backgroundColor: DColors.textWhite.withOpacity(0.1),
               ),
-              Positioned(
-                top: 100,
-                right: -300,
-                child: DCircularContainer(
-                  backgroundColor: DColors.textWhite.withOpacity(0.1),
-                ),
+            ),
+            Positioned(
+              top: 100,
+              right: -300,
+              child: DCircularContainer(
+                backgroundColor: DColors.textWhite.withOpacity(0.1),
               ),
-              child,
-            ],
-          ),
+            ),
+            child,
+          ],
         ),
       ),
     );
