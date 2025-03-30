@@ -5,7 +5,9 @@ import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:iconsax/iconsax.dart';
 
 class DUserProfileTile extends StatelessWidget {
-  const DUserProfileTile({super.key});
+  const DUserProfileTile({super.key, required this.onPressed});
+
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class DUserProfileTile extends StatelessWidget {
         ).textTheme.bodyMedium!.apply(color: DColors.white),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: const Icon(Iconsax.edit, color: DColors.white),
       ),
     );

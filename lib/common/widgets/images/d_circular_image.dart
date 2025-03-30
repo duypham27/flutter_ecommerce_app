@@ -30,6 +30,7 @@ class DCircularImage extends StatelessWidget {
       height: height,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
+        // If image background color is null then switch it to light and dark mode color design.
         color:
             backgroundColor ??
             (DHelperFunctions.isDarkMode(context)
@@ -37,13 +38,15 @@ class DCircularImage extends StatelessWidget {
                 : DColors.white),
         borderRadius: BorderRadius.circular(100),
       ),
-      child: Image(
-        fit: fit,
-        image:
-            isNetworkImage
-                ? NetworkImage(image)
-                : AssetImage(image) as ImageProvider,
-        color: overPlayColor,
+      child: Center(
+        child: Image(
+          fit: fit,
+          image:
+              isNetworkImage
+                  ? NetworkImage(image)
+                  : AssetImage(image) as ImageProvider,
+          color: overPlayColor,
+        ),
       ),
     );
   }
