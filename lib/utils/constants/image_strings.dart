@@ -56,6 +56,16 @@ class DImages {
   static const String promoBanner2 = "assets/images/banners/promo-banner-2.png";
   static const String promoBanner3 = "assets/images/banners/promo-banner-3.png";
 
+  // -- Profile Reviews
+  static const String userProfileImage1 =
+      "assets/images/reviews/user_profile_image_1.png";
+  static const String userProfileImage2 =
+      "assets/images/reviews/user_profile_image_2.png";
+  static const String userProfileImage3 =
+      "assets/images/reviews/user_profile_image_3.png";
+  static const String userProfileImage4 =
+      "assets/images/reviews/user_profile_image_4.png";
+
   // -- Profile
   static const String user1 = "assets/images/users/user1.png";
 
