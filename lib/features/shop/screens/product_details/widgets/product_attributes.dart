@@ -7,7 +7,6 @@ import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart'
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app/utils/helpers/helper_functions.dart';
-import 'package:get/state_manager.dart';
 
 class DProductAttributes extends StatelessWidget {
   const DProductAttributes({super.key});

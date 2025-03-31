@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:flutter_ecommerce_app/common/widgets/products/ratings/rating_indicator.dart';
-import 'package:flutter_ecommerce_app/features/shop/screens/product_reviews/widgets/progress_indicator_and_rating.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/product_reviews/widgets/user_review_card.dart';
-import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
-import 'package:flutter_ecommerce_app/utils/device/device_utility.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:iconsax/iconsax.dart';
 
 class ProductReviewsScreen extends StatelessWidget {
   const ProductReviewsScreen({super.key});
@@ -38,6 +33,7 @@ class ProductReviewsScreen extends StatelessWidget {
               const SizedBox(height: DSizes.spaceBtwSections),
 
               /// User Reviews List
+              const UserReviewCard(),
               const UserReviewCard(),
               const UserReviewCard(),
               const UserReviewCard(),

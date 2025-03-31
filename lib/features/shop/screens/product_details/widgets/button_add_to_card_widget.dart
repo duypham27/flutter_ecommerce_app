@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/circural_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/icons/d_circular_icon.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';

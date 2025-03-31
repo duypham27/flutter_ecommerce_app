@@ -8,7 +8,6 @@ import 'package:flutter_ecommerce_app/features/shop/screens/product_details/widg
 import 'package:flutter_ecommerce_app/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app/utils/helpers/helper_functions.dart';
-import 'package:flutter_ecommerce_app/utils/theme/custom_themes/bottom_sheet_theme.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
