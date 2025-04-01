@@ -7,6 +7,7 @@ import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart'
 import 'package:flutter_ecommerce_app/features/personalization/screens/address/address.dart';
 import 'package:flutter_ecommerce_app/features/personalization/screens/profile/profile.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/cart/cart.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/order/order.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:get/get.dart';
@@ -72,7 +73,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subTitle: 'Withdraw balance to registered bank account',
-                    onTap: () {},
+                    onTap: () => Get.to(() => const OrderScreen()),
                   ),
                   DSettingsMenuTile(
                     icon: Iconsax.discount_shape,
