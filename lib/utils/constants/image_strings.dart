@@ -66,6 +66,20 @@ class DImages {
   static const String userProfileImage4 =
       "assets/images/reviews/user_profile_image_4.png";
 
+  // -- Payment Methods
+  static const String paypal = "assets/icons/payment_methods/paypal.png";
+  static const String applePay = "assets/icons/payment_methods/apple_pay.png";
+  static const String googlePay = "assets/icons/payment_methods/google_pay.png";
+  static const String creditCard =
+      "assets/icons/payment_methods/credit_card.png";
+  static const String masterCard =
+      "assets/icons/payment_methods/master_card.png";
+  static const String payStack = "assets/icons/payment_methods/pay_stack.png";
+  static const String paytm = "assets/icons/payment_methods/paytm.png";
+  static const String visa = "assets/icons/payment_methods/visa.png";
+  static const String successfulPaymentIcon =
+      "assets/icons/payment_methods/successful_payment_icon.png";
+
   // -- Profile
   static const String user1 = "assets/images/users/user1.png";
 

@@ -6,6 +6,7 @@ import 'package:flutter_ecommerce_app/common/widgets/list_tiles/use_profile_tile
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_ecommerce_app/features/personalization/screens/address/address.dart';
 import 'package:flutter_ecommerce_app/features/personalization/screens/profile/profile.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/cart/cart.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:get/get.dart';
@@ -65,7 +66,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.shopping_cart,
                     title: 'My Cart',
                     subTitle: 'Add, remove products and move to checkout',
-                    onTap: () {},
+                    onTap: () => Get.to(() => const CartScreen()),
                   ),
                   DSettingsMenuTile(
                     icon: Iconsax.bag_tick,
