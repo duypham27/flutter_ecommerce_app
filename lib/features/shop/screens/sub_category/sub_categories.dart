@@ -3,8 +3,10 @@ import 'package:flutter_ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:flutter_ecommerce_app/common/widgets/images/d_rounded_image.dart';
 import 'package:flutter_ecommerce_app/common/widgets/products/product_cards/product_card_horizontal.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/all_products/all_products.dart';
 import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
+import 'package:get/get.dart';
 
 class SubCategoriesScreen extends StatelessWidget {
   const SubCategoriesScreen({super.key});
@@ -32,7 +34,10 @@ class SubCategoriesScreen extends StatelessWidget {
               Column(
                 children: [
                   /// Heading
-                  DSectionHeading(title: 'Sports shirts', onPressed: () {}),
+                  DSectionHeading(
+                    title: 'Sports shirts',
+                    onPressed: () => Get.to(() => const AllProducts()),
+                  ),
                   const SizedBox(height: DSizes.spaceBtwItems / 2),
 
                   SizedBox(
@@ -51,51 +56,51 @@ class SubCategoriesScreen extends StatelessWidget {
               ),
               const SizedBox(height: DSizes.spaceBtwSections),
 
-              /// Column 2
-              Column(
-                children: [
-                  /// Heading
-                  DSectionHeading(title: 'Furnitures', onPressed: () {}),
-                  const SizedBox(height: DSizes.spaceBtwItems / 2),
+              // /// Column 2
+              // Column(
+              //   children: [
+              //     /// Heading
+              //     DSectionHeading(title: 'Furnitures', onPressed: () {}),
+              //     const SizedBox(height: DSizes.spaceBtwItems / 2),
 
-                  SizedBox(
-                    height: 120,
-                    child: ListView.separated(
-                      itemCount: 4,
-                      scrollDirection: Axis.horizontal,
-                      separatorBuilder:
-                          (context, index) =>
-                              const SizedBox(width: DSizes.spaceBtwItems),
-                      itemBuilder:
-                          (context, index) => const DProductCardHorizontal(),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: DSizes.spaceBtwSections),
+              //     SizedBox(
+              //       height: 120,
+              //       child: ListView.separated(
+              //         itemCount: 4,
+              //         scrollDirection: Axis.horizontal,
+              //         separatorBuilder:
+              //             (context, index) =>
+              //                 const SizedBox(width: DSizes.spaceBtwItems),
+              //         itemBuilder:
+              //             (context, index) => const DProductCardHorizontal(),
+              //       ),
+              //     ),
+              //   ],
+              // ),
+              // const SizedBox(height: DSizes.spaceBtwSections),
 
-              /// Column 3
-              Column(
-                children: [
-                  /// Heading
-                  DSectionHeading(title: 'Toys', onPressed: () {}),
-                  const SizedBox(height: DSizes.spaceBtwItems / 2),
+              // /// Column 3
+              // Column(
+              //   children: [
+              //     /// Heading
+              //     DSectionHeading(title: 'Toys', onPressed: () {}),
+              //     const SizedBox(height: DSizes.spaceBtwItems / 2),
 
-                  SizedBox(
-                    height: 120,
-                    child: ListView.separated(
-                      itemCount: 4,
-                      scrollDirection: Axis.horizontal,
-                      separatorBuilder:
-                          (context, index) =>
-                              const SizedBox(width: DSizes.spaceBtwItems),
-                      itemBuilder:
-                          (context, index) => const DProductCardHorizontal(),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: DSizes.spaceBtwSections),
+              //     SizedBox(
+              //       height: 120,
+              //       child: ListView.separated(
+              //         itemCount: 4,
+              //         scrollDirection: Axis.horizontal,
+              //         separatorBuilder:
+              //             (context, index) =>
+              //                 const SizedBox(width: DSizes.spaceBtwItems),
+              //         itemBuilder:
+              //             (context, index) => const DProductCardHorizontal(),
+              //       ),
+              //     ),
+              //   ],
+              // ),
+              // const SizedBox(height: DSizes.spaceBtwSections),
             ],
           ),
         ),

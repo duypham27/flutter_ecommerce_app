@@ -17,9 +17,9 @@ class DChipTheme {
   // -- Dark Theme Chip --
   static ChipThemeData darkChipTheme = const ChipThemeData(
     disabledColor: DColors.darkerGrey,
-    labelStyle: const TextStyle(color: Colors.white),
+    labelStyle: TextStyle(color: Colors.white),
     selectedColor: DColors.primary,
-    padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
+    padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
     checkmarkColor: DColors.white,
   );
 }
