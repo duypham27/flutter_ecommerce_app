@@ -10,10 +10,10 @@ class DAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DAppBar({
     super.key,
     this.title,
-    this.showBackArrow = false,
     this.leadingIcon,
     this.actions,
     this.leadingOnPressed,
+    this.showBackArrow = false,
   });
 
   final Widget? title;
