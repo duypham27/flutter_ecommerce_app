@@ -12,11 +12,11 @@ class DImages {
 
   // -- OnBoarding Images
   static const String onBoardingImage1 =
-      "assets/images/on_boarding_images/green_line_delivery.gif";
+      "assets/images/on_boarding_images/green_line_delivery.png";
   static const String onBoardingImage2 =
-      "assets/images/on_boarding_images/green_line_searching.gif";
+      "assets/images/on_boarding_images/green_line_searching.png";
   static const String onBoardingImage3 =
-      "assets/images/on_boarding_images/green_line_shopping.gif";
+      "assets/images/on_boarding_images/green_line_shopping.png";
 
   // -- Animations
   static const String productsIllustration =
