@@ -31,6 +31,8 @@ class DImages {
       "assets/images/animations/sammy_line_man_received_email.png";
   static const String verifyIllustration =
       "assets/images/animations/sammy_line_travel_backpack.png";
+  static const String docerAnimation =
+      "assets/images/animations/doncer_animation.gif";
 
   // -- Categories Icons
   static const String sportIcon =

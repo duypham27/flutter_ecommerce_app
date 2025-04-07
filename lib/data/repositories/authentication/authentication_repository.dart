@@ -1,5 +1,4 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_ecommerce_app/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:flutter_ecommerce_app/features/authentication/screens/login/login.dart';
 import 'package:flutter_ecommerce_app/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
